@@ -1,0 +1,19 @@
+{
+  "name": "cocktail-grimoire",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@fontsource-variable/manrope": "^5.2.6",
+    "@fontsource-variable/source-serif-4": "^5.2.6",
+    "astro": "^5.13.2",
+    "typescript": "^5.9.2",
+    "yaml": "^2.8.1"
+  }
+}

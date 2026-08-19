@@ -1,0 +1,23 @@
+name: French 75
+recipeNumber: 5
+profile: [sparkling, citrus, crisp]
+family: Sparkling
+baseSpirit: Gin
+technique: Shaken & topped
+glassware: Flute
+visual:
+  accent: "#d5a72b"
+  ice: none
+  garnish: citrus-twist
+  effects: []
+ingredients:
+  - ingredient: Gin
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Fresh lemon juice
+    quantity: { type: measure, amount: 0.5, unit: oz }
+  - ingredient: Simple syrup
+    quantity: { type: measure, amount: 0.5, unit: oz }
+  - ingredient: Dry sparkling wine
+    quantity: { type: measure, amount: 3, unit: oz }
+  - ingredient: Lemon twist
+    quantity: { type: garnish }

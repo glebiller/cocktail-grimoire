@@ -1,0 +1,24 @@
+name: London Smash
+recipeNumber: 8
+profile: [fruity, herbal, sparkling]
+family: Sparkling
+baseSpirit: Gin
+technique: Shaken & topped
+glassware: Highball
+visual:
+  accent: "#D85F86"
+  ice: cubes
+  garnish: none
+  effects: []
+  signature: london-smash
+ingredients:
+  - ingredient: Pink Gin
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Strawberries
+    quantity: { type: count, amount: 2 }
+  - ingredient: Basil Leaves
+    quantity: { type: count, amount: 5 }
+  - ingredient: Fresh Lime Juice
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Tonic Water
+    quantity: { type: measure, amount: 4, unit: oz }

@@ -1,0 +1,23 @@
+name: Honolulu High Tide
+recipeNumber: 10
+profile: [citrus, rich, tropical]
+family: Sour
+baseSpirit: Rum
+technique: Shaken
+glassware: Highball
+visual:
+  accent: "#2A9DB6"
+  ice: crushed
+  garnish: none
+  effects: []
+ingredients:
+  - ingredient: Rum
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Dry Curacao
+    quantity: { type: measure, amount: 0.5, unit: oz }
+  - ingredient: Orgeat
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Lime Juice
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Saline Solution
+    quantity: { type: drop, amount: 2 }

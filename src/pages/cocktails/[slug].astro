@@ -1,0 +1,85 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import CocktailMark from '../../components/CocktailMark.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatAmount } from '../../lib/formatAmount';
+
+export const getStaticPaths = (async () => {
+  const cocktails = await getCollection('cocktails');
+  return cocktails.map((cocktail) => ({
+    params: { slug: cocktail.id },
+    props: { cocktail },
+  }));
+}) satisfies GetStaticPaths;
+
+const { cocktail } = Astro.props;
+const { data } = cocktail;
+
+function formatQuantity(quantity: (typeof data.ingredients)[number]['quantity']) {
+  switch (quantity.type) {
+    case 'measure':
+      return `${formatAmount(quantity.amount)} ${quantity.unit}`;
+    case 'dash':
+    case 'drop':
+    case 'piece':
+    case 'count':
+      return `${formatAmount(quantity.amount)} ${quantity.type}${quantity.amount === 1 ? '' : quantity.type === 'dash' ? 'es' : 's'}`;
+    case 'top':
+    case 'rinse':
+    case 'spray':
+    case 'to-taste':
+      return quantity.type.replace('-', ' ');
+    case 'garnish':
+      return 'garnish';
+  }
+}
+
+const ingredients = data.ingredients.filter(
+  (item) => !(item.quantity.type === 'garnish' && item.ingredient.toLowerCase() === 'none'),
+);
+---
+
+<BaseLayout title={data.name}>
+  <header class="site-header detail-header">
+    <a class="brand" href="/">Cocktail Grimoire</a>
+    <span class="collection-count">{String(data.recipeNumber).padStart(2, '0')}</span>
+  </header>
+
+  <main class="recipe" style={`--accent: ${data.visual.accent}`}>
+    <section class="specimen-stage" aria-labelledby="recipe-title">
+      <div class="detail-mark">
+        <CocktailMark slug={cocktail.id} name={data.name} visual={data.visual} profiles={data.profile} glassware={data.glassware} transition />
+      </div>
+      <div class="specimen-scale" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <article class="recipe-sheet">
+      <div class="recipe-title-block">
+        <h1 id="recipe-title">{data.name}</h1>
+        <ul class="profile" aria-label="Flavor profile">
+          {data.profile.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+
+      <dl class="recipe-facts">
+        <div><dt>Family</dt><dd>{data.family}</dd></div>
+        <div><dt>Base spirit</dt><dd>{data.baseSpirit}</dd></div>
+        <div><dt>Technique</dt><dd>{data.technique}</dd></div>
+        <div><dt>Glassware</dt><dd>{data.glassware}</dd></div>
+      </dl>
+
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          {ingredients.map((item) => (
+            <li class={item.quantity.type === 'garnish' ? 'ingredient-garnish' : undefined}>
+              <span>{item.ingredient}</span>
+              <strong>{formatQuantity(item.quantity)}</strong>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </article>
+  </main>
+</BaseLayout>

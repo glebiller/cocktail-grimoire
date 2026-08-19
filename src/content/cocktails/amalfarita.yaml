@@ -1,0 +1,25 @@
+name: Amalfarita
+recipeNumber: 7
+profile: [citrus, creamy, bitter, tropical]
+family: Margarita
+baseSpirit: Tequila
+technique: Shaken
+glassware: Coupe
+visual:
+  accent: "#c98f3d"
+  ice: none
+  garnish: none
+  effects: []
+ingredients:
+  - ingredient: Tequila
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Aperol
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Cointreau
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Coconut milk
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Simple syrup
+    quantity: { type: measure, amount: 0.5, unit: oz }
+  - ingredient: Fresh lime juice
+    quantity: { type: measure, amount: 0.75, unit: oz }

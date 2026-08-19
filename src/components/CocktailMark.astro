@@ -1,0 +1,161 @@
+---
+import lowball from '../assets/glassware/lowball.svg?raw';
+import highball from '../assets/glassware/highball.svg?raw';
+import nickAndNora from '../assets/glassware/nick-and-nora.svg?raw';
+import coupe from '../assets/glassware/coupe.svg?raw';
+import flute from '../assets/glassware/flute.svg?raw';
+import wine from '../assets/glassware/wine.svg?raw';
+import muleMug from '../assets/glassware/mule-mug.svg?raw';
+import julepCup from '../assets/glassware/julep-cup.svg?raw';
+import martini from '../assets/glassware/martini.svg?raw';
+import margarita from '../assets/glassware/margarita.svg?raw';
+import hurricane from '../assets/glassware/hurricane.svg?raw';
+import mug from '../assets/glassware/mug.svg?raw';
+import { resolveVisualEffects } from '../lib/cocktails';
+import type {
+  GarnishStyle,
+  IceStyle,
+  Profile,
+  Signature,
+  VisualEffect,
+} from '../lib/cocktails';
+import type { Glassware } from '../lib/glassware';
+
+interface VisualConfig {
+  accent: string;
+  ice: IceStyle;
+  garnish: GarnishStyle;
+  effects?: VisualEffect[];
+  signature?: Signature;
+}
+
+interface Props {
+  slug: string;
+  name: string;
+  visual: VisualConfig;
+  profiles: Profile[];
+  glassware: Glassware;
+  transition?: boolean;
+}
+
+const { slug, name, visual, profiles, glassware, transition = false } = Astro.props;
+const glasses: Record<Glassware, string> = {
+  Lowball: lowball,
+  Highball: highball,
+  'Nick & Nora': nickAndNora,
+  Coupe: coupe,
+  Flute: flute,
+  Wine: wine,
+  'Mule Mug': muleMug,
+  'Julep Cup': julepCup,
+  Martini: martini,
+  Margarita: margarita,
+  Hurricane: hurricane,
+  Mug: mug,
+};
+const effects = resolveVisualEffects(profiles, visual.effects);
+---
+
+<div
+  class="cocktail-mark"
+  role="img"
+  aria-label={`${name} illustration`}
+  style={`--accent: ${visual.accent};${transition ? ` view-transition-name: cocktail-${slug};` : ''}`}
+>
+  <span class="cocktail-mark__layer" set:html={glasses[glassware]}></span>
+
+  {visual.ice !== 'none' && (
+    <svg class="cocktail-mark__layer" viewBox="0 0 240 240" aria-hidden="true">
+      {visual.ice === 'large-cube' && <rect x="84" y="105" width="72" height="68" rx="5" transform="rotate(-5 120 139)" />}
+      {visual.ice === 'cubes' && <>
+        <rect x="78" y="105" width="51" height="49" rx="4" transform="rotate(-8 104 130)" />
+        <rect x="119" y="115" width="44" height="43" rx="4" transform="rotate(9 141 137)" />
+      </>}
+      {visual.ice === 'crushed' && <path d="m74 154 13-27 18 8 13-30 20 23 19-12 11 38-17 20-58-1Z" />}
+    </svg>
+  )}
+
+  {visual.signature && (
+    <svg class="cocktail-mark__layer cocktail-mark__signature" viewBox="0 0 240 240" aria-hidden="true">
+      {visual.signature === 'last-word' && <>
+        <path d="M88 65 120 129l32-64M120 67v62" />
+      </>}
+      {visual.signature === 'london-smash' && <>
+        <path d="M103 105c-12 7-18 19-15 32 4 16 16 27 32 27s28-11 32-27c3-13-3-25-15-32-9-5-25-5-34 0Z" class="wash" />
+        <path d="M103 105c-12 7-18 19-15 32 4 16 16 27 32 27s28-11 32-27c3-13-3-25-15-32-9-5-25-5-34 0Z" />
+        <path d="M120 105c-1-14 6-24 18-29M120 91c-10-7-22-6-31 3 9 2 17 7 22 15M128 87c8-8 18-10 28-5-5 7-13 11-22 12" />
+        <circle cx="105" cy="128" r="2" class="solid" /><circle cx="120" cy="121" r="2" class="solid" /><circle cx="135" cy="130" r="2" class="solid" /><circle cx="113" cy="143" r="2" class="solid" /><circle cx="130" cy="146" r="2" class="solid" />
+      </>}
+      {visual.signature === 'paper-plane' && <>
+        <path d="m57 92 126-45-49 82-19-31-58-6Z" class="wash" />
+        <path d="m115 98 68-51-49 82-19-31-58-6 126-45" />
+      </>}
+      {visual.signature === 'tulum-sunset' && <>
+        <path d="M95 98a25 25 0 0 1 50 0Z" class="wash" />
+        <path d="M120 64v17M92 70l11 15M148 70l-11 15M76 86l20 6M164 86l-20 6" />
+      </>}
+    </svg>
+  )}
+
+  {effects.map((effect) => (
+    <svg class={`cocktail-mark__layer cocktail-mark__effect effect-${effect}`} viewBox="0 0 240 240" aria-hidden="true">
+      {effect === 'sparkling' && <g class="solid bubbles">
+        <circle cx="109" cy="148" r="3.5"/><circle cx="130" cy="126" r="3"/>
+        <circle cx="108" cy="105" r="2.5"/><circle cx="132" cy="87" r="3.5"/><circle cx="116" cy="73" r="2"/>
+      </g>}
+      {effect === 'spicy' && <path d="M73 127h-15M78 111l-12-9M78 143l-12 9" />}
+      {effect === 'creamy' && <path d="M52 72c23 8 113 8 136 0" class="soft-band" />}
+      {effect === 'smoky' && <path d="M105 67c-13-15 11-22 1-38m25 38c15-17-10-23 2-40" class="smoke" />}
+    </svg>
+  ))}
+
+  {visual.garnish !== 'none' && (
+    <svg class="cocktail-mark__layer cocktail-mark__garnish" viewBox="0 0 240 240" aria-hidden="true">
+      {visual.garnish === 'citrus-wheel' && <>
+        <circle cx="177" cy="72" r="25" />
+        <path d="M177 47v50m-22-37 44 25m-44 0 44-25" />
+      </>}
+      {visual.garnish === 'citrus-twist' && <path d="M169 52c-29 2-46 14-51 34 18 9 37 10 57 2-17-1-28-9-33-23 3-7 12-11 27-13Z" />}
+      {visual.garnish === 'cherry' && <>
+        <circle cx="120" cy="102" r="11" class="solid" />
+        <path d="M120 91c7-15 18-19 28-13" />
+      </>}
+    </svg>
+  )}
+</div>
+
+<style>
+  .cocktail-mark {
+    color: var(--accent);
+    display: grid;
+    inline-size: 100%;
+    place-items: center;
+    position: relative;
+  }
+
+  .cocktail-mark__layer {
+    display: block;
+    fill: none;
+    grid-area: 1 / 1;
+    inline-size: 100%;
+    pointer-events: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.5;
+  }
+
+  .cocktail-mark :global(svg) {
+    block-size: auto;
+    display: block;
+    inline-size: 100%;
+    overflow: visible;
+  }
+
+  .solid { fill: currentColor; stroke: none; }
+  .wash { fill: currentColor; fill-opacity: 0.18; }
+  .soft-band { stroke-width: 7; stroke-opacity: 0.34; }
+  .smoke { stroke-opacity: 0.62; }
+  .bubbles { opacity: 0.86; }
+  .effect-spicy { stroke-width: 3; }
+</style>

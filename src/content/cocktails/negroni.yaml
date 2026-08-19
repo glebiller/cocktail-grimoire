@@ -1,0 +1,21 @@
+name: Negroni
+recipeNumber: 1
+profile: [bitter, herbal, spirit-forward]
+family: Aperitivo
+baseSpirit: Gin
+technique: Stirred
+glassware: Lowball
+visual:
+  accent: "#d94a2b"
+  ice: cubes
+  garnish: citrus-twist
+  effects: []
+ingredients:
+  - ingredient: London dry gin
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Sweet vermouth
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Campari
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Orange peel
+    quantity: { type: garnish }

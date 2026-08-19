@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-16T17:33:19Z",
+  "title": "Design System: Cocktail Grimoire",
+  "extensions": {
+    "colorMeta": {
+      "mineral-ground": { "role": "neutral", "displayName": "Mineral Ground", "canonical": "#f2f0eb", "tonalRamp": ["oklch(15% 0.01 85)", "oklch(27% 0.01 85)", "oklch(39% 0.01 85)", "oklch(51% 0.01 85)", "oklch(63% 0.01 85)", "oklch(75% 0.01 85)", "oklch(87% 0.01 85)", "oklch(95% 0.01 85)"] },
+      "raised-mineral": { "role": "neutral", "displayName": "Raised Mineral", "canonical": "#f7f6f2", "tonalRamp": ["oklch(15% 0.008 85)", "oklch(27% 0.008 85)", "oklch(39% 0.008 85)", "oklch(51% 0.008 85)", "oklch(63% 0.008 85)", "oklch(75% 0.008 85)", "oklch(87% 0.008 85)", "oklch(95% 0.008 85)"] },
+      "cabinet-ink": { "role": "primary", "displayName": "Cabinet Ink", "canonical": "#171714", "tonalRamp": ["oklch(15% 0.006 105)", "oklch(27% 0.006 105)", "oklch(39% 0.006 105)", "oklch(51% 0.006 105)", "oklch(63% 0.006 105)", "oklch(75% 0.006 105)", "oklch(87% 0.006 105)", "oklch(95% 0.006 105)"] },
+      "muted-graphite": { "role": "neutral", "displayName": "Muted Graphite", "canonical": "#615f58", "tonalRamp": ["oklch(15% 0.015 85)", "oklch(27% 0.015 85)", "oklch(39% 0.015 85)", "oklch(51% 0.015 85)", "oklch(63% 0.015 85)", "oklch(75% 0.015 85)", "oklch(87% 0.015 85)", "oklch(95% 0.015 85)"] },
+      "mineral-rule": { "role": "neutral", "displayName": "Mineral Rule", "canonical": "#c9c5bb", "tonalRamp": ["oklch(15% 0.015 80)", "oklch(27% 0.015 80)", "oklch(39% 0.015 80)", "oklch(51% 0.015 80)", "oklch(63% 0.015 80)", "oklch(75% 0.015 80)", "oklch(87% 0.015 80)", "oklch(95% 0.015 80)"] },
+      "soft-rule": { "role": "neutral", "displayName": "Soft Rule", "canonical": "#dedbd3", "tonalRamp": ["oklch(15% 0.012 80)", "oklch(27% 0.012 80)", "oklch(39% 0.012 80)", "oklch(51% 0.012 80)", "oklch(63% 0.012 80)", "oklch(75% 0.012 80)", "oklch(87% 0.012 80)", "oklch(95% 0.012 80)"] },
+      "negroni-vermilion": { "role": "secondary", "displayName": "Negroni Vermilion", "canonical": "#d94a2b", "tonalRamp": ["oklch(15% 0.16 35)", "oklch(27% 0.16 35)", "oklch(39% 0.16 35)", "oklch(51% 0.16 35)", "oklch(63% 0.16 35)", "oklch(75% 0.14 35)", "oklch(87% 0.09 35)", "oklch(95% 0.04 35)"] },
+      "daiquiri-chartreuse": { "role": "secondary", "displayName": "Daiquiri Chartreuse", "canonical": "#8aa83e", "tonalRamp": ["oklch(15% 0.12 120)", "oklch(27% 0.12 120)", "oklch(39% 0.12 120)", "oklch(51% 0.12 120)", "oklch(63% 0.12 120)", "oklch(75% 0.11 120)", "oklch(87% 0.07 120)", "oklch(95% 0.03 120)"] },
+      "old-fashioned-umber": { "role": "secondary", "displayName": "Old Fashioned Umber", "canonical": "#a75c2a", "tonalRamp": ["oklch(15% 0.12 55)", "oklch(27% 0.12 55)", "oklch(39% 0.12 55)", "oklch(51% 0.12 55)", "oklch(63% 0.12 55)", "oklch(75% 0.10 55)", "oklch(87% 0.065 55)", "oklch(95% 0.03 55)"] },
+      "last-word-herbal": { "role": "secondary", "displayName": "Last Word Herbal", "canonical": "#5c8b55", "tonalRamp": ["oklch(15% 0.08 140)", "oklch(27% 0.08 140)", "oklch(39% 0.08 140)", "oklch(51% 0.08 140)", "oklch(63% 0.08 140)", "oklch(75% 0.07 140)", "oklch(87% 0.045 140)", "oklch(95% 0.02 140)"] },
+      "french-75-gold": { "role": "secondary", "displayName": "French 75 Gold", "canonical": "#d5a72b", "tonalRamp": ["oklch(15% 0.14 90)", "oklch(27% 0.14 90)", "oklch(39% 0.14 90)", "oklch(51% 0.14 90)", "oklch(63% 0.14 90)", "oklch(75% 0.12 90)", "oklch(87% 0.075 90)", "oklch(95% 0.03 90)"] },
+      "paper-plane-coral": { "role": "secondary", "displayName": "Paper Plane Coral", "canonical": "#db713f", "tonalRamp": ["oklch(15% 0.13 50)", "oklch(27% 0.13 50)", "oklch(39% 0.13 50)", "oklch(51% 0.13 50)", "oklch(63% 0.13 50)", "oklch(75% 0.11 50)", "oklch(87% 0.07 50)", "oklch(95% 0.03 50)"] },
+      "amalfarita-amber": { "role": "secondary", "displayName": "Amalfarita Amber", "canonical": "#c98f3d", "tonalRamp": ["oklch(15% 0.12 75)", "oklch(27% 0.12 75)", "oklch(39% 0.12 75)", "oklch(51% 0.12 75)", "oklch(63% 0.12 75)", "oklch(75% 0.10 75)", "oklch(87% 0.065 75)", "oklch(95% 0.03 75)"] },
+      "tulum-sunset-red": { "role": "secondary", "displayName": "Tulum Sunset Red", "canonical": "#C44A3D", "tonalRamp": ["oklch(15% 0.14 28)", "oklch(27% 0.14 28)", "oklch(39% 0.14 28)", "oklch(51% 0.14 28)", "oklch(63% 0.14 28)", "oklch(75% 0.12 28)", "oklch(87% 0.075 28)", "oklch(95% 0.03 28)"] }
+    },
+    "typographyMeta": {
+      "collection-display": { "displayName": "Collection Display", "purpose": "The compact, oversized title on the cabinet index." },
+      "recipe-display": { "displayName": "Recipe Display", "purpose": "Cocktail names on recipe detail pages." },
+      "bay-title": { "displayName": "Bay Title", "purpose": "Cocktail names inside cabinet captions." },
+      "body": { "displayName": "Body", "purpose": "Facts, ingredient names, and general reading text." },
+      "label": { "displayName": "Label / Register", "purpose": "Uppercase cabinet, specimen, and recipe metadata." },
+      "reading-quantity": { "displayName": "Reading Quantity", "purpose": "Serif ingredient measures with tabular numerals." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "specimen-shift", "value": "700ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Raises and scales a mark, and slides the accent wash through a bay on hover or focus." },
+      { "name": "wash-opacity", "value": "300ms ease-out", "purpose": "Fades the cabinet bay accent wash." },
+      { "name": "route-specimen", "value": "650ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Carries the named cocktail mark between collection and detail routes." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Near-instant fallback for CSS transitions when reduced motion is requested; route view transitions are disabled." }
+    ],
+    "breakpoints": [
+      { "name": "cabinet-four-to-three", "value": "1100px" },
+      { "name": "recipe-split-to-stack", "value": "900px" },
+      { "name": "cabinet-three-to-two", "value": "760px" },
+      { "name": "cabinet-two-to-one", "value": "580px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Masthead Navigation",
+      "kind": "nav",
+      "description": "A compact ruled masthead that keeps the collection identity and current recipe register visible.",
+      "html": "<nav class=\"ds-masthead\" aria-label=\"Primary\"><a href=\"#\">Cocktail Grimoire</a><span>08 recipes</span></nav>",
+      "css": ".ds-masthead { align-items:center; background:#f2f0eb; border-bottom:1px solid #c9c5bb; color:#171714; display:flex; font:400 .75rem/1.45 'Manrope Variable',sans-serif; font-variant-numeric:tabular-nums; justify-content:space-between; letter-spacing:.06em; min-height:4.5rem; padding-inline:clamp(1rem,3vw,3rem); text-transform:uppercase; } .ds-masthead a { color:inherit; font-weight:720; text-decoration:none; } .ds-masthead span { color:#615f58; } .ds-masthead a:hover { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:.25em; } .ds-masthead a:focus-visible { outline:3px solid #171714; outline-offset:3px; }"
+    },
+    {
+      "name": "Cabinet Bay",
+      "kind": "card",
+      "refersTo": "cabinet-bay",
+      "description": "A full-cell recipe link with a numbered register, large specimen mark, caption, and accent-wash interaction.",
+      "html": "<article class=\"ds-cabinet-bay\" style=\"--accent:#d94a2b\"><a href=\"#\"><small>01 · OLD FASHIONED</small><div class=\"ds-mark\" aria-hidden=\"true\">◇</div><h3>Negroni</h3></a></article>",
+      "css": ".ds-cabinet-bay { border: 1px solid #171714; background: #f2f0eb; color: #171714; } .ds-cabinet-bay a { display: grid; grid-template-rows: auto 1fr auto; min-height: 29rem; padding: 1rem; position: relative; overflow: hidden; text-decoration: none; } .ds-cabinet-bay a::before { content: ''; position: absolute; inset: 0; background: var(--accent); opacity: 0; transform: translateY(101%); transition: transform 700ms cubic-bezier(0.16,1,0.3,1), opacity 300ms ease-out; } .ds-cabinet-bay a:hover::before, .ds-cabinet-bay a:focus-visible::before { opacity: .09; transform: translateY(0); } .ds-cabinet-bay a:focus-visible { outline: 3px solid #171714; outline-offset: -3px; } .ds-mark, .ds-cabinet-bay h3, .ds-cabinet-bay small { position: relative; z-index: 1; } .ds-mark { align-self: center; justify-self: center; color: var(--accent); font-size: 8rem; transition: transform 700ms cubic-bezier(0.16,1,0.3,1); } .ds-cabinet-bay a:hover .ds-mark, .ds-cabinet-bay a:focus-visible .ds-mark { transform: translateY(-.5rem) scale(1.035); }"
+    },
+    {
+      "name": "Cocktail Mark",
+      "kind": "custom",
+      "description": "A transparent 240-by-240 specimen that layers a cocktail-specific drink drawing over reusable glassware geometry; both inherit the recipe's raw YAML accent.",
+      "html": "<div class=\"ds-cocktail-mark\" role=\"img\" aria-label=\"Daiquiri illustration\" style=\"--accent:#8aa83e\"><span class=\"ds-cocktail-mark__drink\"><svg aria-hidden=\"true\" viewBox=\"0 0 240 240\"><path d=\"M43 59h154c-7 48-32 75-77 80-45-5-70-32-77-80Z\" fill=\"currentColor\" fill-opacity=\".16\"/></svg></span><span class=\"ds-cocktail-mark__glass\"><svg aria-hidden=\"true\" viewBox=\"0 0 240 240\"><path d=\"M42 62h156c-8 48-33 76-78 81-45-5-70-33-78-81Zm78 81v43M86 198h68\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/></svg></span></div>",
+      "css": ".ds-cocktail-mark { color:var(--accent); display:grid; position:relative; width:100%; place-items:center; } .ds-cocktail-mark__drink, .ds-cocktail-mark__glass { display:grid; grid-area:1 / 1; width:100%; place-items:center; } .ds-cocktail-mark svg { display:block; width:100%; height:auto; overflow:visible; }"
+    },
+    {
+      "name": "Specimen Stage",
+      "kind": "custom",
+      "refersTo": "specimen-stage",
+      "description": "The large detail-stage field that frames a mark with an accent tint, registration border, axis, and measurement ticks.",
+      "html": "<section class=\"ds-specimen-stage\" style=\"--accent:#5c8b55\"><div class=\"ds-register\"><span>EQUAL PARTS</span><span>COUPE</span></div><div class=\"ds-stage-mark\" aria-hidden=\"true\">◇</div></section>",
+      "css": ".ds-specimen-stage { align-content: center; background: color-mix(in srgb, var(--accent) 8%, #f7f6f2); border-right: 1px solid #171714; display: grid; min-height: calc(100vh - 4.5rem); overflow: hidden; padding: clamp(1rem,3vw,3rem); position: relative; } .ds-specimen-stage::before { content: ''; position: absolute; inset: clamp(1rem,3vw,3rem); border: 1px solid color-mix(in srgb, var(--accent) 52%, #c9c5bb); } .ds-specimen-stage::after { content: ''; position: absolute; top: 50%; width: 100%; height: 1px; background: var(--accent); opacity: .34; } .ds-register { display: flex; justify-content: space-between; position: absolute; inset: clamp(2rem,5vw,5rem) clamp(2rem,5vw,5rem) auto; z-index: 2; font: 400 .7rem/1.45 'Manrope Variable',sans-serif; letter-spacing: .08em; text-transform: uppercase; } .ds-stage-mark { justify-self: center; position: relative; z-index: 1; color: var(--accent); font-size: 12rem; }"
+    },
+    {
+      "name": "Ingredient Row",
+      "kind": "custom",
+      "refersTo": "ingredient-row",
+      "description": "A ruled name-and-measure row whose quantity uses the restrained serif reading voice and an accessible accent/ink mix.",
+      "html": "<div class=\"ds-ingredient-row\" style=\"--accent:#db713f\"><span>Bourbon</span><strong>¾ oz</strong></div>",
+      "css": ".ds-ingredient-row { align-items: baseline; border-top: 1px solid #c9c5bb; display: grid; gap: 1rem; grid-template-columns: 1fr auto; padding: 1rem 0; color: #171714; font-family: 'Manrope Variable',sans-serif; } .ds-ingredient-row strong { color: color-mix(in srgb, var(--accent) 42%, #171714); font: 560 1.1rem/1.45 'Source Serif 4 Variable',serif; font-variant-numeric: tabular-nums; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Chromatic Glass Cabinet",
+    "overview": "Cocktail Grimoire presents recipes as chromatic glass specimens, not conventional image cards. A pale mineral ground, black ink rules, numbered cabinet bays, and translucent cocktail-specific color make the collection feel like a modern archive assembled for looking, choosing, and keeping.\n\nThe system is restrained but not anonymous. Manrope supplies crisp editorial structure; Source Serif 4 appears only where measured quantities benefit from a reading voice. Each YAML accent is allowed to behave like light through glass while the neutral framework keeps every recipe part of one cabinet.",
+    "keyCharacteristics": [
+      "Pale mineral surfaces held together by one-pixel ink and stone rules.",
+      "Large two-layer SVG specimens colored at runtime from raw YAML accents.",
+      "Dense numbered bays that reflow only as whole cabinet units.",
+      "Flat depth, tabular registers, and tightly tracked editorial labels.",
+      "A persistent specimen mark that carries identity from browse view to recipe detail."
+    ],
+    "rules": [
+      { "name": "The Raw Accent Rule", "body": "Do not bake cocktail colors into SVG files or remap them to a generic palette. Supply the YAML value as `--accent`; marks inherit it through `currentColor`.", "section": "colors" },
+      { "name": "The Legible Tint Rule", "body": "Accent may remain raw for illustration and atmosphere. For small functional text, mix it 42% with Cabinet Ink; for rules, mix it with Mineral Rule. The accent never replaces the ink focus ring.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Manrope owns display, navigation, labels, facts, and ingredient names. Source Serif 4 appears only on quantities; do not broaden it into a general decorative serif layer.", "section": "typography" },
+      { "name": "The Flat Cabinet Rule", "body": "Use rules, translucent color, scale, and motion to establish layers. Do not add box shadows to bays, stages, navigation, or recipe sheets.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do treat every recipe as a numbered glass specimen inside one continuous cabinet.",
+      "Do preserve raw YAML accents for SVG marks and low-opacity atmosphere.",
+      "Do mix accent with Cabinet Ink for small quantity text and retain ink-only focus outlines.",
+      "Do reflow the cabinet at `1100px`, `760px`, and `580px` by moving whole bays.",
+      "Do keep the detail stage intact when it stacks above the recipe sheet at `900px`.",
+      "Do provide the reduced-motion fallback whenever adding or changing transitions."
+    ],
+    "donts": [
+      "Don't turn bays into conventional image cards with gaps, rounded corners, badges, or shadows.",
+      "Don't hard-code accent fills or strokes inside cocktail SVGs; use `currentColor` from the component's dynamic `--accent`.",
+      "Don't use raw cocktail accent for small functional text when the established accent/ink mix is available.",
+      "Don't replace the cabinet's precise rules with floating surfaces or ornamental depth.",
+      "Don't introduce extra typefaces or spread Source Serif 4 beyond ingredient quantities.",
+      "Don't break the specimen, register, and caption into separate responsive units."
+    ]
+  }
+}

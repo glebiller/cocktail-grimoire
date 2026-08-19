@@ -1,0 +1,24 @@
+name: Tulum Sunset
+recipeNumber: 5
+profile: [spicy, complex, fruity]
+family: Sour
+baseSpirit: Tequila
+technique: Shaken
+glassware: Lowball
+visual:
+  accent: "#C44A3D"
+  ice: cubes
+  garnish: none
+  effects: []
+  signature: tulum-sunset
+ingredients:
+  - ingredient: Tequila
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Triple Sec
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Ancho Chile Liqueur
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Fresh Lime Juice
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Black Pepper Syrup
+    quantity: { type: measure, amount: 0.5, unit: oz }

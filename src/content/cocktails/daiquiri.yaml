@@ -1,0 +1,21 @@
+name: Daiquiri
+recipeNumber: 2
+profile: [bright, citrus, dry]
+family: Sour
+baseSpirit: White rum
+technique: Shaken
+glassware: Coupe
+visual:
+  accent: "#8aa83e"
+  ice: none
+  garnish: citrus-wheel
+  effects: []
+ingredients:
+  - ingredient: White rum
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Fresh lime juice
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Simple syrup
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Lime wheel
+    quantity: { type: garnish }

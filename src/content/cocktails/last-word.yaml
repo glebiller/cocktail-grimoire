@@ -1,0 +1,24 @@
+name: Last Word
+recipeNumber: 4
+profile: [herbal, tart, complex]
+family: Equal Parts
+baseSpirit: Gin
+technique: Shaken
+glassware: Coupe
+visual:
+  accent: "#5c8b55"
+  ice: none
+  garnish: cherry
+  effects: []
+  signature: last-word
+ingredients:
+  - ingredient: Gin
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Green Chartreuse
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Maraschino liqueur
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Fresh lime juice
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Brandied cherry
+    quantity: { type: garnish }

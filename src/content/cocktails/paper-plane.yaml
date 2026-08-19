@@ -1,0 +1,24 @@
+name: Paper Plane
+recipeNumber: 6
+profile: [bittersweet, citrus, modern]
+family: Modern Classic
+baseSpirit: Bourbon
+technique: Shaken
+glassware: Coupe
+visual:
+  accent: "#db713f"
+  ice: none
+  garnish: none
+  effects: []
+  signature: paper-plane
+ingredients:
+  - ingredient: Bourbon
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Aperol
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Amaro Nonino
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Fresh lemon juice
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: None
+    quantity: { type: garnish }

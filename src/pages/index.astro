@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import CocktailMark from '../components/CocktailMark.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const cocktails = (await getCollection('cocktails')).sort(
+  (a, b) => a.data.recipeNumber - b.data.recipeNumber,
+);
+---
+
+<BaseLayout>
+  <header class="site-header">
+    <a class="brand" href="/" aria-current="page">Cocktail Grimoire</a>
+    <span class="collection-count">{cocktails.length} recipes</span>
+  </header>
+
+  <main class="collection-shell">
+    <div class="collection-heading">
+      <h1>The collection</h1>
+      <p aria-hidden="true">{String(cocktails.length).padStart(2, '0')}</p>
+    </div>
+
+    <ol class="cabinet" aria-label="Cocktail collection">
+      {cocktails.map((cocktail) => (
+        <li class="cabinet-bay" style={`--accent: ${cocktail.data.visual.accent}`}>
+          <a href={`/cocktails/${cocktail.id}/`}>
+            <div class="bay-register">
+              <span>{String(cocktail.data.recipeNumber).padStart(2, '0')}</span>
+              <span>{cocktail.data.glassware}</span>
+            </div>
+            <div class="bay-mark">
+              <CocktailMark
+                slug={cocktail.id}
+                name={cocktail.data.name}
+                visual={cocktail.data.visual}
+                glassware={cocktail.data.glassware}
+                profiles={cocktail.data.profile}
+                transition
+              />
+            </div>
+            <div class="bay-caption">
+              <h2>{cocktail.data.name}</h2>
+              <ul aria-label="Flavor profile">
+                {cocktail.data.profile.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </main>
+</BaseLayout>

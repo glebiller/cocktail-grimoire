@@ -1,0 +1,25 @@
+name: Oaxaca Glow
+recipeNumber: 9
+profile: [bright, citrus, tart, rich]
+family: Margarita
+baseSpirit: Tequila
+technique: Shaken
+glassware: Margarita
+visual:
+  accent: "#D66A2E"
+  ice: none
+  garnish: none
+  effects: []
+ingredients:
+  - ingredient: Tequila blanco
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Carrot juice
+    quantity: { type: measure, amount: 1, unit: oz }
+  - ingredient: Fresh lime juice
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Honey syrup
+    quantity: { type: measure, amount: 0.75, unit: oz }
+  - ingredient: Saline Solution
+    quantity: { type: drop, amount: 3 }
+  - ingredient: Salt rim
+    quantity: { type: garnish }

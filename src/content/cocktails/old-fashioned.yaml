@@ -1,0 +1,21 @@
+name: Old Fashioned
+recipeNumber: 3
+profile: [rich, aromatic, spirit-forward]
+family: Ancestral
+baseSpirit: Bourbon
+technique: Stirred
+glassware: Lowball
+visual:
+  accent: "#a75c2a"
+  ice: large-cube
+  garnish: citrus-twist
+  effects: []
+ingredients:
+  - ingredient: Bourbon
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Demerara syrup
+    quantity: { type: measure, amount: 0.25, unit: oz }
+  - ingredient: Angostura bitters
+    quantity: { type: dash, amount: 2 }
+  - ingredient: Orange peel
+    quantity: { type: garnish }

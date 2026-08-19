@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" aria-hidden="true" focusable="false">
+  <path d="M55 76h112v114H55V76Z" fill="currentColor" fill-opacity=".14"/>
+  <path d="M55 76h112" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <path d="M53 51h116v141H53V51Zm116 27h14c28 0 28 73 0 73h-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
