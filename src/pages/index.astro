@@ -39,7 +39,9 @@ const cocktails = (await getCollection('cocktails')).sort(
               />
             </div>
             <div class="bay-caption">
-              <h2>{cocktail.data.name}</h2>
+              <h2 class:list={{ 'bay-title-long': cocktail.data.name.length > 16 }}>
+                {cocktail.data.name}
+              </h2>
               <ul aria-label="Flavor profile">
                 {cocktail.data.profile.map((item) => <li>{item}</li>)}
               </ul>
