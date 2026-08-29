@@ -1,0 +1,24 @@
+name: Ombre Nomade
+recipeNumber: 2
+profile: [smoky, rich, fruity, tart]
+family: Sour
+baseSpirit: Mezcal
+technique: Shaken
+glassware: Lowball
+visual:
+  accent: "#76506f"
+  ice: none
+  garnish: none
+  effects: []
+  signature: ombre-nomade
+ingredients:
+  - ingredient: Adicción Mezcal
+    quantity: { type: measure, amount: 1.5, unit: oz }
+  - ingredient: Pedro Ximénez
+    quantity: { type: measure, amount: 0.5, unit: oz }
+  - ingredient: Périgord Walnut Liqueur
+    quantity: { type: measure, amount: 0.25, unit: oz }
+  - ingredient: Tahiti Vanilla Syrup
+    quantity: { type: measure, amount: 0.25, unit: oz }
+  - ingredient: Verjus
+    quantity: { type: measure, amount: 0.75, unit: oz }

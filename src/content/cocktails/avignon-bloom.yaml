@@ -1,0 +1,22 @@
+name: Avignon Bloom
+recipeNumber: 7
+profile: [floral, citrus, tart, bright]
+family: Sour
+baseSpirit: Vodka
+technique: Shaken
+glassware: Martini
+visual:
+  accent: "#9670b5"
+  ice: none
+  garnish: none
+  effects: []
+  signature: avignon-bloom
+ingredients:
+  - ingredient: Vodka
+    quantity: { type: measure, amount: 2, unit: oz }
+  - ingredient: Triple Sec
+    quantity: { type: measure, amount: 0.5, unit: oz }
+  - ingredient: Fresh Lemon Juice
+    quantity: { type: measure, amount: 1.5, unit: oz }
+  - ingredient: Lavender Syrup
+    quantity: { type: measure, amount: 1, unit: oz }

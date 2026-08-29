@@ -14,6 +14,7 @@ import {
 
 const COCKTAIL_NAMES = [
   'Amalfarita',
+  'Avignon Bloom',
   'Daiquiri',
   'French 75',
   'Honolulu High Tide',
@@ -21,6 +22,7 @@ const COCKTAIL_NAMES = [
   'London Smash',
   'Negroni',
   'Old Fashioned',
+  'Ombre Nomade',
   'Oaxaca Glow',
   'Paper Plane',
   'Tulum Sunset',

@@ -77,6 +77,14 @@ const effects = resolveVisualEffects(profiles, visual.effects);
 
   {visual.signature && (
     <svg class="cocktail-mark__layer cocktail-mark__signature" viewBox="0 0 240 240" aria-hidden="true">
+      {visual.signature === 'avignon-bloom' && <>
+        <path d="M123 164c-2-25-3-49-2-75M121 111l-14-12M121 123l15-13M122 138l-16-12M121 149l14-12" />
+        <circle cx="104" cy="96" r="5" class="solid" />
+        <circle cx="137" cy="107" r="5" class="solid" />
+        <circle cx="103" cy="123" r="5" class="solid" />
+        <circle cx="138" cy="134" r="5" class="solid" />
+        <circle cx="121" cy="86" r="5" class="solid" />
+      </>}
       {visual.signature === 'last-word' && <>
         <path d="M88 65 120 129l32-64M120 67v62" />
       </>}
@@ -85,6 +93,10 @@ const effects = resolveVisualEffects(profiles, visual.effects);
         <path d="M103 105c-12 7-18 19-15 32 4 16 16 27 32 27s28-11 32-27c3-13-3-25-15-32-9-5-25-5-34 0Z" />
         <path d="M120 105c-1-14 6-24 18-29M120 91c-10-7-22-6-31 3 9 2 17 7 22 15M128 87c8-8 18-10 28-5-5 7-13 11-22 12" />
         <circle cx="105" cy="128" r="2" class="solid" /><circle cx="120" cy="121" r="2" class="solid" /><circle cx="135" cy="130" r="2" class="solid" /><circle cx="113" cy="143" r="2" class="solid" /><circle cx="130" cy="146" r="2" class="solid" />
+      </>}
+      {visual.signature === 'ombre-nomade' && <>
+        <path d="M91 130c0-20 13-36 29-36s29 16 29 36-13 36-29 36-29-16-29-36Z" class="wash" />
+        <path d="M91 130c0-20 13-36 29-36s29 16 29 36-13 36-29 36-29-16-29-36ZM120 94c-9 12-11 24-7 36s2 24-7 34M120 94c9 12 11 24 7 36s-2 24 7 34" />
       </>}
       {visual.signature === 'paper-plane' && <>
         <path d="m57 92 126-45-49 82-19-31-58-6Z" class="wash" />

@@ -20,10 +20,12 @@ export const PROFILES = [
   'creamy',
   'crisp',
   'dry',
+  'floral',
   'fruity',
   'herbal',
   'modern',
   'rich',
+  'smoky',
   'sparkling',
   'spicy',
   'spirit-forward',
@@ -31,7 +33,15 @@ export const PROFILES = [
   'tropical',
 ] as const;
 
-export const BASE_SPIRITS = ['Bourbon', 'Gin', 'Rum', 'Tequila', 'White rum'] as const;
+export const BASE_SPIRITS = [
+  'Bourbon',
+  'Gin',
+  'Mezcal',
+  'Rum',
+  'Tequila',
+  'Vodka',
+  'White rum',
+] as const;
 
 export const ICE_STYLES = ['none', 'cubes', 'large-cube', 'crushed'] as const;
 export const GARNISH_STYLES = [
@@ -41,7 +51,14 @@ export const GARNISH_STYLES = [
   'citrus-twist',
 ] as const;
 export const VISUAL_EFFECTS = ['creamy', 'smoky', 'sparkling', 'spicy'] as const;
-export const SIGNATURES = ['last-word', 'london-smash', 'paper-plane', 'tulum-sunset'] as const;
+export const SIGNATURES = [
+  'avignon-bloom',
+  'last-word',
+  'london-smash',
+  'ombre-nomade',
+  'paper-plane',
+  'tulum-sunset',
+] as const;
 
 export type Profile = (typeof PROFILES)[number];
 export type IceStyle = (typeof ICE_STYLES)[number];
@@ -51,6 +68,7 @@ export type Signature = (typeof SIGNATURES)[number];
 
 const PROFILE_EFFECTS: Partial<Record<Profile, VisualEffect>> = {
   creamy: 'creamy',
+  smoky: 'smoky',
   sparkling: 'sparkling',
   spicy: 'spicy',
 };
